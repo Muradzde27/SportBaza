@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>СпортБаза</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">⚽ СпортБаза</div>
+    <button id="themeBtn">🌙 Сменить тему</button>
+  </header>
+
+  <div id="welcome" class="welcome" hidden>
+    👋 Добро пожаловать в магазин!
+  </div>
+
+  <section class="hero">
+    <h1>Всё для спорта — в одном месте</h1>
+    <p>Мячи, ракетки, перчатки и скейтборды с доставкой по Баку</p>
+  </section>
+
+  <main class="layout">
+
+    <section>
+      <div class="top">
+        <h2>Каталог</h2>
+        <label class="break">
+          <input type="checkbox" id="breakServer"> Сломать сервер
+        </label>
+        <button id="loadBtn">🔄 Загрузить товары</button>
+      </div>
+
+      <p id="status"></p>
+      <div id="catalog" class="catalog"></div>
+    </section>
+
+    <aside class="cart">
+      <h2>🛒 Корзина</h2>
+      <ul id="cartList"></ul>
+      <p class="total">Итого: <b id="total">0</b> AZN</p>
+      <button id="clearBtn">Очистить корзину</button>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
